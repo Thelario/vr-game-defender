@@ -8,4 +8,3 @@ which is a vr tower defender game developed by four college students for the Vid
 ### Unity Packages Needed
 * Lean Tween
 * ProBuilder
-* 
