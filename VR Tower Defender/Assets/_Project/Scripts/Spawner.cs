@@ -1,9 +1,10 @@
 using UnityEngine;
 using System.Collections;
+using Game.Managers;
 
 namespace Game
 {
-	public class Spawner : MonoBehaviour
+	public class Spawner : Singleton<Spawner>
 	{
 		[SerializeField] private GameObject enemyPrefab;
 		[SerializeField] private float spawnInterval = 3.5f;
@@ -13,12 +14,7 @@ namespace Game
 
         private int enemysAlive;
         private bool readyToSpawn;
-        
-        private void Start()
-        {
-            readyToSpawn = true;
-        }
-        
+
         private void Update()
         {
             if (!readyToSpawn)
@@ -26,6 +22,11 @@ namespace Game
             
             readyToSpawn = false;
             StartCoroutine(spawnEnemys());
+        }
+
+        public void StartSpawning()
+        {
+            readyToSpawn = true;
         }
 
         private IEnumerator spawnEnemys()

@@ -22,7 +22,7 @@ namespace Game
 		// A flag variable to determine if the spell can be casted or not
 		protected bool canBeCasted;
 
-		protected void Start()
+		protected virtual void Start()
 		{
 			timeBetweenSpellCastsCounter = timeBetweenSpellCasts;
 			currentManaCost = initialManaCost;
