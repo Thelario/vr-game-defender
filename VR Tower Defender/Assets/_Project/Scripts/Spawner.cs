@@ -15,6 +15,11 @@ namespace Game
         private int enemysAlive;
         private bool readyToSpawn;
 
+        private void Start()
+        {
+            StartSpawning();
+        }
+
         private void Update()
         {
             if (!readyToSpawn)
