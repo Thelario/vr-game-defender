@@ -24,7 +24,6 @@ namespace Game
         private void Start()
         {
             round = 1;
-            StartSpawning();
         }
 
         private void Update()
@@ -62,6 +61,8 @@ namespace Game
             {
                 yield return new WaitForSeconds(1);
             }
+            
+            /*
             endRoundElementPosition = Camera.main.transform.position;
             endRoundElementPosition.z = endRoundElementPosition.z + 0.5f;
          
@@ -71,6 +72,7 @@ namespace Game
             {
                 yield return new WaitForSeconds(spawnInterval);
             }
+            */
 
             readyToSpawn = true;
             round++;

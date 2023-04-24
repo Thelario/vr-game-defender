@@ -15,6 +15,7 @@ namespace Game
 		[SerializeField] private MeshRenderer enemyMeshRenderer;
 		[SerializeField] private Material defaultMaterial;
 		[SerializeField] private Material hitMaterial;
+		[SerializeField] private Transform skullTransform;
 		
 		private Transform[] waypoints;
 		private Vector3 siguientePosicion;
@@ -28,6 +29,8 @@ namespace Game
 
 		private void Update() 
 		{
+			//skullTransform.LookAt(siguientePosicion);
+			
 			transform.position = Vector3.MoveTowards(
 				transform.position,
 				siguientePosicion,

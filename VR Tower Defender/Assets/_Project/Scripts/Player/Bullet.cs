@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Game
@@ -27,6 +26,9 @@ namespace Game
 
         private void OnTriggerEnter(Collider other)
         {
+            if (!other.CompareTag("Enemy"))
+                return;
+        
             if (other.TryGetComponent(out IDamageable iDamageable))
                 iDamageable.TakeDamage(_damage);
             
