@@ -24,6 +24,7 @@ namespace Game
         private void Start()
         {
             round = 1;
+            readyToSpawn = true;
         }
 
         private void Update()
