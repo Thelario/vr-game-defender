@@ -11,6 +11,7 @@ namespace Game
 		[SerializeField] float distanciaCambio = 0.5f;
 		[SerializeField] private float health;
 		[SerializeField] private float hitTime;
+		[SerializeField] private float damage;
 
 		[Header("References")]
 		[SerializeField] private MeshRenderer enemyMeshRenderer;
@@ -74,6 +75,7 @@ namespace Game
 		{
 			if (other.gameObject.CompareTag ("Door"))
 			{
+			    Castle.Instance.LoseHealth(damage);
 				Destroy(gameObject);
 			}
 		}
