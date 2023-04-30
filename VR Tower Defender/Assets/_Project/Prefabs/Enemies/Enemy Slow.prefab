@@ -41,7 +41,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5130793887845930591}
   serializedVersion: 8
-  lengthInSec: 3.5
+  lengthInSec: 5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -116,7 +116,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3.5
+      scalar: 5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -223,7 +223,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.8456661, g: 0.29725558, b: 1, a: 1}
+      maxColor: {r: 0.2980392, g: 0.3559178, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4827,7 +4827,7 @@ GameObject:
   - component: {fileID: 8208198547525273905}
   - component: {fileID: 758950119227345598}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Enemy Slow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4841,8 +4841,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8208198547525273898}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3, y: 0.5, z: -8.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.3, y: 1, z: -8.6}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2151317487504920239}
@@ -4926,11 +4926,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1994fd17a31f91f43870051f756af13d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 4
-  distanciaCambio: 0.2
-  health: 15
+  velocidad: 3
+  distanciaCambio: 0.25
+  health: 50
   hitTime: 0.1
-  damage: 1
+  damage: 3
   enemyMeshRenderer: {fileID: 2133008670870564571}
   defaultMaterial: {fileID: 2100000, guid: e7476007b3e902f4fbacf11098082904, type: 2}
   hitMaterial: {fileID: 2100000, guid: 0b3a2dec9b2f4734fa165572700823b4, type: 2}

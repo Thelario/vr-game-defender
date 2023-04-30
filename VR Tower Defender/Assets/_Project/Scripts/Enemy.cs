@@ -18,10 +18,8 @@ namespace Game
 		[SerializeField] private Material defaultMaterial;
 		[SerializeField] private Material hitMaterial;
 		[SerializeField] private Transform skullTransform;
-
 		[SerializeField] private HPPuerta barraDeVida;
-		
-		
+
 		private Transform[] waypoints;
 		private Vector3 siguientePosicion;
 		private int numeroSiguientePosicion;
@@ -32,9 +30,12 @@ namespace Game
 			siguientePosicion = waypoints[0].position;
 		}
 
-		private void Update() 
+		private void Update()
 		{
-			//skullTransform.LookAt(siguientePosicion);
+			Vector3 relPos = siguientePosicion - transform.position;
+			transform.rotation = Quaternion.LookRotation(relPos, Vector3.up);
+			//Vector3 nextPosModified = new Vector3(siguientePosicion.x, transform.position.y, siguientePosicion.z);
+			//transform.up = (nextPosModified - transform.position).normalized;
 			
 			transform.position = Vector3.MoveTowards(
 				transform.position,

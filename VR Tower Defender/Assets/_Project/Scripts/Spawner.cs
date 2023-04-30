@@ -1,13 +1,11 @@
 using UnityEngine;
 using System.Collections;
-using Game.Managers;
-using Unity.VisualScripting;
 
 namespace Game
 {
 	public class Spawner : Managers.Singleton<Spawner>
     {
-		[SerializeField] private GameObject enemyPrefab;
+		[SerializeField] private GameObject[] enemyPrefabs;
 		[SerializeField] private float spawnInterval = 3.5f;
         [SerializeField] private int numEnemies;
         [SerializeField] private int maxEnemies = 20;
@@ -48,7 +46,7 @@ namespace Game
             {
                 if (father.childCount < maxEnemies)
                 {
-                    Instantiate(enemyPrefab, transform.position, Quaternion.identity, father);
+                    Instantiate(enemyPrefabs[Random.Range(0, enemyPrefabs.Length)], transform.position, Quaternion.identity, father);
                     yield return new WaitForSeconds(0.5f);
                 }
                 else
