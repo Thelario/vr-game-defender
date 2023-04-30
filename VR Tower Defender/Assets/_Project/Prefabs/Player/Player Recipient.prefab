@@ -112,6 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialManaCost: 10
   timeBetweenSpellCasts: 0.5
+  spellParticles: {fileID: 0}
   damage: 5
   bulletPrefab: {fileID: 8375389829672916908, guid: 053a5da7feee203498b5b4f217132d72, type: 3}
   wandTransform: {fileID: 0}
@@ -293,3 +294,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialManaCost: 20
   timeBetweenSpellCasts: 2
+  spellParticles: {fileID: 0}

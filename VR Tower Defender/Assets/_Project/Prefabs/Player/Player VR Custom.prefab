@@ -2728,6 +2728,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1486408812080252320}
     m_Modifications:
+    - target: {fileID: 5335511389189321609, guid: 3d35ed31346869a439c59d9891e55961, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6288342694513194058, guid: 3d35ed31346869a439c59d9891e55961, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6956092850715416248, guid: 3d35ed31346869a439c59d9891e55961, type: 3}
       propertyPath: m_Name
       value: Wand

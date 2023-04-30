@@ -682,6 +682,11 @@ Transform:
   m_Father: {fileID: 617476430}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &23221083 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8039465738942274206, guid: 18679f39f3908ad4dbac3d1215cb08db, type: 3}
+  m_PrefabInstance: {fileID: 599470546}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &25839354
 GameObject:
   m_ObjectHideFlags: 0
@@ -8061,6 +8066,14 @@ PrefabInstance:
       propertyPath: wandTransform
       value: 
       objectReference: {fileID: 599470548}
+    - target: {fileID: 7433235041512185623, guid: 3e911f5e78e88d241bf7617c80e7dac9, type: 3}
+      propertyPath: spellParticles
+      value: 
+      objectReference: {fileID: 2033186006}
+    - target: {fileID: 7433235042796010257, guid: 3e911f5e78e88d241bf7617c80e7dac9, type: 3}
+      propertyPath: spellParticles
+      value: 
+      objectReference: {fileID: 23221083}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e911f5e78e88d241bf7617c80e7dac9, type: 3}
 --- !u!1001 &346047062
@@ -39038,6 +39051,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4677379291911492, guid: 027daa397ee5f524283f5fec780f0a71, type: 3}
   m_PrefabInstance: {fileID: 2032870447}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2033186006 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1337448481658029599, guid: 18679f39f3908ad4dbac3d1215cb08db, type: 3}
+  m_PrefabInstance: {fileID: 599470546}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2035054262
 GameObject:

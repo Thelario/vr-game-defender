@@ -10,6 +10,9 @@ namespace Game
 		// The time that it takes a spell to cast after a previous cast
 		[SerializeField] protected float timeBetweenSpellCasts;
 
+		// Particles associated with this spell
+		[SerializeField] protected GameObject spellParticles;
+
 		// The current cost of the spell at the current moment of the game
 		protected int currentManaCost;
 		
@@ -52,6 +55,7 @@ namespace Game
 		public void EnableSpell(bool active)
 		{
 			isActive = active;
+			spellParticles.SetActive(active);
 		}
 
 		public int CastSpell(int currentPlayerMana)
