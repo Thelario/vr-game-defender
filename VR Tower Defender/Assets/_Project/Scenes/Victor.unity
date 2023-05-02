@@ -196,6 +196,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Platform_Small_GrassVariant
       objectReference: {fileID: 0}
+    - target: {fileID: 1859968965280778, guid: f7b43761098f9964882fc65fc91802fb, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4885761877076902, guid: f7b43761098f9964882fc65fc91802fb, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -257,6 +261,10 @@ PrefabInstance:
     - target: {fileID: 1941568499870630, guid: 4c65c362d8007bd49b543e018d6efe83, type: 3}
       propertyPath: m_Name
       value: Rock_Medium_F (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1941568499870630, guid: 4c65c362d8007bd49b543e018d6efe83, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4349711203045790, guid: 4c65c362d8007bd49b543e018d6efe83, type: 3}
       propertyPath: m_RootOrder
@@ -1140,6 +1148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_B (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4023953962702480, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1692,6 +1704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Platform_Medium_GrassVariant
       objectReference: {fileID: 0}
+    - target: {fileID: 1475441172221664, guid: 098ae599500a3944392e1db2264b4f85, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4982551277912176, guid: 098ae599500a3944392e1db2264b4f85, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2069,6 +2085,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Medium_F
       objectReference: {fileID: 0}
+    - target: {fileID: 1941568499870630, guid: 4c65c362d8007bd49b543e018d6efe83, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4349711203045790, guid: 4c65c362d8007bd49b543e018d6efe83, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2358,6 +2378,10 @@ PrefabInstance:
     - target: {fileID: 1941568499870630, guid: 4c65c362d8007bd49b543e018d6efe83, type: 3}
       propertyPath: m_Name
       value: Rock_Medium_F (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1941568499870630, guid: 4c65c362d8007bd49b543e018d6efe83, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4349711203045790, guid: 4c65c362d8007bd49b543e018d6efe83, type: 3}
       propertyPath: m_RootOrder
@@ -3562,7 +3586,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25682
+  m_Name: pb_Mesh80898
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5270,6 +5294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Medium_F
       objectReference: {fileID: 0}
+    - target: {fileID: 1941568499870630, guid: 4c65c362d8007bd49b543e018d6efe83, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4349711203045790, guid: 4c65c362d8007bd49b543e018d6efe83, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -5836,6 +5864,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_B (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4023953962702480, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -5909,6 +5941,10 @@ PrefabInstance:
     - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_Name
       value: Mountain_B (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4023953962702480, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_RootOrder
@@ -6301,7 +6337,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25738
+  m_Name: pb_Mesh80954
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8010,6 +8046,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 270324645586913349, guid: 3e911f5e78e88d241bf7617c80e7dac9, type: 3}
+      propertyPath: shootPoint
+      value: 
+      objectReference: {fileID: 599470547}
+    - target: {fileID: 270324645586913349, guid: 3e911f5e78e88d241bf7617c80e7dac9, type: 3}
+      propertyPath: wandTransform
+      value: 
+      objectReference: {fileID: 599470548}
+    - target: {fileID: 270324645586913349, guid: 3e911f5e78e88d241bf7617c80e7dac9, type: 3}
+      propertyPath: spellParticles
+      value: 
+      objectReference: {fileID: 1612683275}
     - target: {fileID: 7433235040980958510, guid: 3e911f5e78e88d241bf7617c80e7dac9, type: 3}
       propertyPath: m_Name
       value: Player Recipient
@@ -9605,6 +9653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Cave_Entry_B
       objectReference: {fileID: 0}
+    - target: {fileID: 1471052384335704, guid: 1c500ba592ff6da499b984c6f47d6db2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4695488222352260, guid: 1c500ba592ff6da499b984c6f47d6db2, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -10003,7 +10055,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26580
+  m_Name: pb_Mesh81798
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10299,6 +10351,10 @@ PrefabInstance:
     - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_Name
       value: Mountain_B (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4023953962702480, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_RootOrder
@@ -11964,6 +12020,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_B (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4023953962702480, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -12497,7 +12557,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26938
+  m_Name: pb_Mesh82156
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12895,6 +12955,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Fern_Medium_SumAut (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1076245025680976, guid: 027daa397ee5f524283f5fec780f0a71, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4677379291911492, guid: 027daa397ee5f524283f5fec780f0a71, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -13062,6 +13126,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_B (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4023953962702480, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -13170,14 +13238,6 @@ PrefabInstance:
     - target: {fileID: 4022988771367380, guid: 551e369b5f1ddaf40ae324f1bd070c95, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4022988771367380, guid: 551e369b5f1ddaf40ae324f1bd070c95, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5.1314063
-      objectReference: {fileID: 0}
-    - target: {fileID: 4022988771367380, guid: 551e369b5f1ddaf40ae324f1bd070c95, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 10.010999
       objectReference: {fileID: 0}
     - target: {fileID: 4022988771367380, guid: 551e369b5f1ddaf40ae324f1bd070c95, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13341,6 +13401,10 @@ PrefabInstance:
     - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_Name
       value: Mountain_B (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4023953962702480, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_RootOrder
@@ -13718,6 +13782,10 @@ PrefabInstance:
     - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_Name
       value: Mountain_B (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4023953962702480, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_RootOrder
@@ -16324,6 +16392,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LandMass_A (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1036129514309822, guid: b753b84b310350445b6f3a72a93c0cb0, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4006109060056840, guid: b753b84b310350445b6f3a72a93c0cb0, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -16938,7 +17010,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26242
+  m_Name: pb_Mesh81460
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17524,7 +17596,7 @@ GameObject:
   - component: {fileID: 917702685}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23871,6 +23943,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_B (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4023953962702480, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -23944,6 +24020,10 @@ PrefabInstance:
     - target: {fileID: 1186895167238064, guid: d7509b3f716acc4479707fd176053311, type: 3}
       propertyPath: m_Name
       value: Rock_Medium_E
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186895167238064, guid: d7509b3f716acc4479707fd176053311, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4098749466127522, guid: d7509b3f716acc4479707fd176053311, type: 3}
       propertyPath: m_RootOrder
@@ -24080,6 +24160,10 @@ PrefabInstance:
     - target: {fileID: 1450765305872694, guid: 258b2869cccfa32408476598f131a104, type: 3}
       propertyPath: m_Name
       value: Mountain_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 1450765305872694, guid: 258b2869cccfa32408476598f131a104, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4347523942905236, guid: 258b2869cccfa32408476598f131a104, type: 3}
       propertyPath: m_RootOrder
@@ -25727,6 +25811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_B (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4023953962702480, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -26165,6 +26253,10 @@ PrefabInstance:
     - target: {fileID: 1036129514309822, guid: b753b84b310350445b6f3a72a93c0cb0, type: 3}
       propertyPath: m_Name
       value: LandMass_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036129514309822, guid: b753b84b310350445b6f3a72a93c0cb0, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4006109060056840, guid: b753b84b310350445b6f3a72a93c0cb0, type: 3}
       propertyPath: m_RootOrder
@@ -26826,7 +26918,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26068
+  m_Name: pb_Mesh81284
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27825,6 +27917,10 @@ PrefabInstance:
     - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_Name
       value: Mountain_B (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4023953962702480, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_RootOrder
@@ -29880,6 +29976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LandMass_B
       objectReference: {fileID: 0}
+    - target: {fileID: 1068300832006322, guid: 6e6047bea77ec0b41901a0943c12d941, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4148800339698014, guid: 6e6047bea77ec0b41901a0943c12d941, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -30859,6 +30959,10 @@ PrefabInstance:
     - target: {fileID: 1450765305872694, guid: 258b2869cccfa32408476598f131a104, type: 3}
       propertyPath: m_Name
       value: Mountain_A (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1450765305872694, guid: 258b2869cccfa32408476598f131a104, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4347523942905236, guid: 258b2869cccfa32408476598f131a104, type: 3}
       propertyPath: m_RootOrder
@@ -32000,7 +32104,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25872
+  m_Name: pb_Mesh81088
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -32242,6 +32346,10 @@ PrefabInstance:
     - target: {fileID: 1450765305872694, guid: 258b2869cccfa32408476598f131a104, type: 3}
       propertyPath: m_Name
       value: Mountain_A (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1450765305872694, guid: 258b2869cccfa32408476598f131a104, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4347523942905236, guid: 258b2869cccfa32408476598f131a104, type: 3}
       propertyPath: m_RootOrder
@@ -32566,6 +32674,11 @@ Transform:
   m_Father: {fileID: 589733658}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1612683275 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3773035325349390399, guid: 18679f39f3908ad4dbac3d1215cb08db, type: 3}
+  m_PrefabInstance: {fileID: 599470546}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1615312901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32576,6 +32689,10 @@ PrefabInstance:
     - target: {fileID: 1450765305872694, guid: 258b2869cccfa32408476598f131a104, type: 3}
       propertyPath: m_Name
       value: Mountain_A (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1450765305872694, guid: 258b2869cccfa32408476598f131a104, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4347523942905236, guid: 258b2869cccfa32408476598f131a104, type: 3}
       propertyPath: m_RootOrder
@@ -33125,6 +33242,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_B (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4023953962702480, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -33272,6 +33393,10 @@ PrefabInstance:
     - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_Name
       value: Mountain_B (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4023953962702480, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_RootOrder
@@ -34262,6 +34387,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Fern_Medium_SumAut (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1076245025680976, guid: 027daa397ee5f524283f5fec780f0a71, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4677379291911492, guid: 027daa397ee5f524283f5fec780f0a71, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -34471,6 +34600,10 @@ PrefabInstance:
     - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_Name
       value: Mountain_B (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4023953962702480, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_RootOrder
@@ -37067,6 +37200,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_B (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4023953962702480, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -37499,6 +37636,10 @@ PrefabInstance:
     - target: {fileID: 1450765305872694, guid: 258b2869cccfa32408476598f131a104, type: 3}
       propertyPath: m_Name
       value: Mountain_A (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1450765305872694, guid: 258b2869cccfa32408476598f131a104, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4347523942905236, guid: 258b2869cccfa32408476598f131a104, type: 3}
       propertyPath: m_RootOrder
@@ -39295,6 +39436,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LandMass_B (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1068300832006322, guid: 6e6047bea77ec0b41901a0943c12d941, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4148800339698014, guid: 6e6047bea77ec0b41901a0943c12d941, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -39812,6 +39957,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_B
       objectReference: {fileID: 0}
+    - target: {fileID: 1965603994279486, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4023953962702480, guid: 61b37e00b42fbdb43be04bdc84e65bc2, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -40141,7 +40290,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26718
+  m_Name: pb_Mesh81936
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

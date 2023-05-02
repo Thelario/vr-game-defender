@@ -12,8 +12,7 @@ namespace Game
         protected override void CreateSpellRay(int currentPlayerMana)
         {
             GameObject bullet = Instantiate(bulletPrefab, wandTransform.position, Quaternion.identity);
-            bullet.GetComponent<Bullet>().SetupBullet(damage, shootPoint);
-            print("Casting Basic Spell");
+            bullet.GetComponent<IConfigurable>().ConfigureBullet(damage, shootPoint);
         }
     }
 }

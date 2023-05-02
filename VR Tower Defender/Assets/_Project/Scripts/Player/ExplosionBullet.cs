@@ -1,9 +1,12 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Game
 {
-    public class Bullet : MonoBehaviour, IConfigurable
+    public class ExplosionBullet : MonoBehaviour, IConfigurable
     {
+        [SerializeField] private GameObject explosionEffect;
         [SerializeField] private float moveSpeed;
 
         protected float _damage;
@@ -24,15 +27,13 @@ namespace Game
             _damage = damage;
         }
 
-        protected virtual void OnTriggerEnter(Collider other)
+        protected void OnTriggerEnter(Collider other)
         {
-            if (!other.CompareTag("Enemy"))
-                return;
-        
-            if (other.TryGetComponent(out IDamageable iDamageable))
-                iDamageable.TakeDamage(_damage);
-            
-            Destroy(gameObject);
+            if (other.CompareTag("Enemy") || other.CompareTag("Obstacle"))
+            {
+                Destroy(Instantiate(explosionEffect, transform.position, transform.rotation), 2f);
+                Destroy(gameObject);
+            }
         }
     }
 }

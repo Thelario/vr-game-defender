@@ -223,7 +223,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.5091858, b: 0.23121786, a: 1}
+      maxColor: {r: 0.23137254, g: 1, b: 0.27064684, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5044,7 +5044,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.4859348, b: 0.7214395, a: 1}
+      maxColor: {r: 0.48627448, g: 1, b: 0.84465694, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -9645,10 +9645,10 @@ GameObject:
   - component: {fileID: 8375389829672916913}
   - component: {fileID: 8375389829672916910}
   - component: {fileID: 8375389829672916911}
-  - component: {fileID: 8375389829672916915}
-  - component: {fileID: 4791607823257008432}
+  - component: {fileID: 2793089649148505721}
+  - component: {fileID: 6928814862575742921}
   m_Layer: 0
-  m_Name: Spell Bullet
+  m_Name: Explosion Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9699,7 +9699,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 24e73955ba8338f41a24cd3aea0285a6, type: 2}
+  - {fileID: 2100000, guid: 40fa752affdc6cf45a47396764154085, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9734,7 +9734,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8375389829672916915
+--- !u!114 &2793089649148505721
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9743,11 +9743,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8375389829672916908}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b9b1236520c8694da113dc38a83be13, type: 3}
+  m_Script: {fileID: 11500000, guid: 92e9447d9d393174e8fb36d2a0d99310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionEffect: {fileID: 5278372610133573694, guid: c214df6344b2e6e45a566927d90c9cde, type: 3}
   moveSpeed: 50
---- !u!54 &4791607823257008432
+--- !u!54 &6928814862575742921
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -1,5 +1,56 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &23129901916210125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 32511537252583215}
+  - component: {fileID: 270324645586913349}
+  m_Layer: 0
+  m_Name: Explosion Spell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &32511537252583215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23129901916210125}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7433235042467600578}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &270324645586913349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23129901916210125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4125668817904216940545c170a5dc1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialManaCost: 50
+  timeBetweenSpellCasts: 2
+  spellParticles: {fileID: 0}
+  damage: 50
+  bulletPrefab: {fileID: 8375389829672916908, guid: dd1069a28343ea740bcb55bf3eab5e80, type: 3}
+  wandTransform: {fileID: 0}
+  shootPoint: {fileID: 0}
 --- !u!1 &7433235040980958510
 GameObject:
   m_ObjectHideFlags: 0
@@ -64,6 +115,7 @@ MonoBehaviour:
   spells:
   - {fileID: 7433235041512185623}
   - {fileID: 7433235042796010257}
+  - {fileID: 270324645586913349}
   currentSpell: 0
   currentPlayerMana: 0
 --- !u!1 &7433235041512185621
@@ -110,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4125668817904216940545c170a5dc1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialManaCost: 10
+  initialManaCost: 5
   timeBetweenSpellCasts: 0.5
   spellParticles: {fileID: 0}
   damage: 5
@@ -147,6 +199,7 @@ Transform:
   m_Children:
   - {fileID: 7433235041512185622}
   - {fileID: 7433235042796010256}
+  - {fileID: 32511537252583215}
   m_Father: {fileID: 7433235040980958511}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

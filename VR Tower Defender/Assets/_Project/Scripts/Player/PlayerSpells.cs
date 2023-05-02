@@ -36,7 +36,7 @@ namespace Game
 			
 			// TODO: if we implement the spell wheel, this will have to change
 			// We calculate which is the next spell in the array
-			currentSpell = currentSpell == 0 ? 1 : 0;
+			currentSpell = (currentSpell + 1) % spells.Length;
 			
 			// We active the the new spell
 			spells[currentSpell].EnableSpell(true);
