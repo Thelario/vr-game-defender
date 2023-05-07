@@ -1146,7 +1146,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh36640
+  m_Name: pb_Mesh93020
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7552,18 +7552,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 459812904}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e17fbfb9fe3cb644db52fd8c9d70e671, type: 3}
+  m_Script: {fileID: 11500000, guid: 000c6262fd7fa2447af7a5dab1196f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dontDestroyOnLoad: 0
   initialHealth: 100
+  barraVida: {fileID: 1980764009}
 --- !u!43 &471544454
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh37110
+  m_Name: pb_Mesh93508
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15504,6 +15504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialManaCost: 20
   timeBetweenSpellCasts: 2
+  spellParticles: {fileID: 0}
 --- !u!1 &838363151
 GameObject:
   m_ObjectHideFlags: 0
@@ -25287,7 +25288,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh37184
+  m_Name: pb_Mesh93582
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28036,7 +28037,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh36528
+  m_Name: pb_Mesh30160
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38125,7 +38126,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh36560
+  m_Name: pb_Mesh92940
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -39905,6 +39906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialManaCost: 1
   timeBetweenSpellCasts: 0.5
+  spellParticles: {fileID: 0}
   damage: 5
   bulletPrefab: {fileID: 8375389829672916908, guid: 053a5da7feee203498b5b4f217132d72, type: 3}
   wandTransform: {fileID: 0}
@@ -44431,8 +44433,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroyOnLoad: 0
-  enemyPrefab: {fileID: 8208198547525273898, guid: 54a14b19e7347fd42817a53eaef3ceb9, type: 3}
+  enemyPrefabs:
+  - {fileID: 8208198547525273898, guid: 54a14b19e7347fd42817a53eaef3ceb9, type: 3}
+  - {fileID: 8208198547525273898, guid: ad871967ba3e140488a866c09c117875, type: 3}
+  - {fileID: 8208198547525273898, guid: 306ef65efebcbd441b9e4fa151730579, type: 3}
   spawnInterval: 3.5
+  numEnemies: 0
   maxEnemies: 200
   father: {fileID: 1925022909}
   endRoundElementPrefab: {fileID: 3276673948044855634, guid: 385f6eeb853ee4e41ab43fde7d514015, type: 3}

@@ -18,7 +18,6 @@ namespace Game
 		[SerializeField] private Material defaultMaterial;
 		[SerializeField] private Material hitMaterial;
 		[SerializeField] private Transform skullTransform;
-		[SerializeField] private HPPuerta barraDeVida;
 
 		private Transform[] waypoints;
 		private Vector3 siguientePosicion;
@@ -76,7 +75,6 @@ namespace Game
 		{
 			if (other.gameObject.CompareTag ("Door"))
 			{
-			    Castle.Instance.LoseHealth(damage);
 				Destroy(gameObject);
 			}
 		}

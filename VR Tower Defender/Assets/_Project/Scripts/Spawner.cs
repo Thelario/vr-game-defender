@@ -60,10 +60,9 @@ namespace Game
             {
                 yield return new WaitForSeconds(1);
             }
-            
+
             /*
-            endRoundElementPosition = Camera.main.transform.position;
-            endRoundElementPosition.z = endRoundElementPosition.z + 0.5f;
+            endRoundElementPosition = new Vector3(-12f, 16f, -7f);
          
             endRoundElement = Instantiate(endRoundElementPrefab, endRoundElementPosition, Quaternion.identity);
 
@@ -71,7 +70,7 @@ namespace Game
             {
                 yield return new WaitForSeconds(spawnInterval);
             }
-            */
+           */
 
             readyToSpawn = true;
             round++;
