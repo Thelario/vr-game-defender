@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 namespace Game
 {
@@ -10,10 +11,9 @@ namespace Game
         [SerializeField] private int numEnemies;
         [SerializeField] private int maxEnemies = 20;
         [SerializeField] private Transform father;
-        [SerializeField] private GameObject endRoundElementPrefab;
+        [SerializeField] private Button startRoundButton;
 
-        private GameObject endRoundElement;
-        private Vector3 endRoundElementPosition;
+        private Vector3 startRoundElementPosition;
         private int round;
 
         private int enemysAlive;
@@ -61,16 +61,14 @@ namespace Game
                 yield return new WaitForSeconds(1);
             }
 
-            /*
-            endRoundElementPosition = new Vector3(-12f, 16f, -7f);
-         
-            endRoundElement = Instantiate(endRoundElementPrefab, endRoundElementPosition, Quaternion.identity);
 
-            while (endRoundElement != null)
+            startRoundButton.gameObject.SetActive(true);
+
+            while (startRoundButton.isActiveAndEnabled)
             {
-                yield return new WaitForSeconds(spawnInterval);
+                yield return new WaitForSeconds(1);
             }
-           */
+
 
             readyToSpawn = true;
             round++;
