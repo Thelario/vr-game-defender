@@ -31,7 +31,7 @@ namespace Game
 			currentManaCost = initialManaCost;
 		}
 
-		protected void Update()
+		protected virtual void Update()
 		{
 			// If the current spell is not active, we do nothing
 			if (!isActive)

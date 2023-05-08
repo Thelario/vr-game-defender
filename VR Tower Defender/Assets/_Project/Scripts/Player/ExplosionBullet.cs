@@ -31,7 +31,9 @@ namespace Game
         {
             if (other.CompareTag("Enemy") || other.CompareTag("Obstacle"))
             {
-                Destroy(Instantiate(explosionEffect, transform.position, transform.rotation), 2f);
+                GameObject explosion = Instantiate(explosionEffect, transform.position, transform.rotation);
+                explosion.GetComponent<ExplosionDamage>().SetDamage(_damage);
+                Destroy(explosion, 2f);
                 Destroy(gameObject);
             }
         }
