@@ -1,11 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Game
 {
 	public class PlayerSpells : MonoBehaviour
 	{
 		// Player mana at the start of the game
-		[SerializeField] private int initialPlayerMana;
+		[SerializeField] private int maxMana;
 
 		// The spells that the player can cast
 		[SerializeField] private Spell[] spells;
@@ -16,17 +17,22 @@ namespace Game
 		// The mana that the player currently has at this exact moment of the game
 		[SerializeField] private int currentPlayerMana;
 
+		[SerializeField] private Slider manaSlider;
+
 		private void Start()
 		{
 			currentSpell = 0;
-			currentPlayerMana = initialPlayerMana;
+			currentPlayerMana = maxMana;
 			spells[currentSpell].EnableSpell(true);
+			manaSlider.maxValue = maxMana;
+			manaSlider.value = currentPlayerMana;
 		}
 
 		public void CastSpell()
 		{
 			// We cast the current spell
 			currentPlayerMana -= spells[currentSpell].CastSpell(currentPlayerMana);
+			manaSlider.value = currentPlayerMana;
 		}
 
 		public void ChangeSpell()
@@ -34,7 +40,6 @@ namespace Game
 			// We deactivate the current spell
 			spells[currentSpell].EnableSpell(false);
 			
-			// TODO: if we implement the spell wheel, this will have to change
 			// We calculate which is the next spell in the array
 			currentSpell = (currentSpell + 1) % spells.Length;
 			
@@ -42,6 +47,12 @@ namespace Game
 			spells[currentSpell].EnableSpell(true);
 			
 			print("Changing spell");
+		}
+
+		public void RefillMana(int mana)
+        {
+			currentPlayerMana = Mathf.Clamp(currentPlayerMana + mana, 0, maxMana);
+			manaSlider.value = currentPlayerMana;
 		}
 	}
 }

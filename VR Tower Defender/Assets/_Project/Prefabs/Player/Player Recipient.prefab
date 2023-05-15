@@ -47,7 +47,7 @@ MonoBehaviour:
   initialManaCost: 50
   timeBetweenSpellCasts: 2
   spellParticles: {fileID: 0}
-  damage: 50
+  damage: 15
   bulletPrefab: {fileID: 8375389829672916908, guid: dd1069a28343ea740bcb55bf3eab5e80, type: 3}
   wandTransform: {fileID: 0}
   shootPoint: {fileID: 0}
@@ -111,13 +111,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82db5a48cfd1bc44e932ef9d1cb06033, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialPlayerMana: 99999999
+  maxMana: 200
   spells:
   - {fileID: 7433235041512185623}
   - {fileID: 7433235042796010257}
   - {fileID: 270324645586913349}
   currentSpell: 0
   currentPlayerMana: 0
+  manaSlider: {fileID: 0}
 --- !u!1 &7433235041512185621
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,6 +346,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4cab555f5474d8b8154d2005d5ea9f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialManaCost: 20
+  initialManaCost: 0
   timeBetweenSpellCasts: 2
   spellParticles: {fileID: 0}
+  rayDistance: 0
+  wandTransform: {fileID: 0}
+  shootPoint: {fileID: 0}

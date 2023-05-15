@@ -26,6 +26,12 @@ namespace Game
 
         protected virtual void OnTriggerEnter(Collider other)
         {
+            if (other.CompareTag("Obstacle"))
+            {
+                Destroy(gameObject);
+                return;
+            }
+
             if (!other.CompareTag("Enemy"))
                 return;
         

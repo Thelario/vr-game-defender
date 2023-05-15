@@ -12,6 +12,7 @@ namespace Game
         [SerializeField] private int maxEnemies = 20;
         [SerializeField] private Transform father;
         [SerializeField] private Button startRoundButton;
+        [SerializeField] private PlayerSpells ps;
 
         private Vector3 startRoundElementPosition;
         private int round;
@@ -22,7 +23,7 @@ namespace Game
         private void Start()
         {
             round = 1;
-            readyToSpawn = true;
+            readyToSpawn = false;
         }
 
         private void Update()
@@ -61,14 +62,13 @@ namespace Game
                 yield return new WaitForSeconds(1);
             }
 
-
             startRoundButton.gameObject.SetActive(true);
+            ps.RefillMana(200);
 
             while (startRoundButton.isActiveAndEnabled)
             {
                 yield return new WaitForSeconds(1);
             }
-
 
             readyToSpawn = true;
             round++;
