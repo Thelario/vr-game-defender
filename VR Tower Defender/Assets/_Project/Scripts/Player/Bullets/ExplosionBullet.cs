@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Game
@@ -9,7 +7,7 @@ namespace Game
         [SerializeField] private GameObject explosionEffect;
         [SerializeField] private float moveSpeed;
 
-        protected float _damage;
+        private float _damage;
 
         private void Start()
         {
@@ -29,13 +27,13 @@ namespace Game
 
         protected void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag("Enemy") || other.CompareTag("Obstacle"))
-            {
-                GameObject explosion = Instantiate(explosionEffect, transform.position, transform.rotation);
-                explosion.GetComponent<ExplosionDamage>().SetDamage(_damage);
-                Destroy(explosion, 2f);
-                Destroy(gameObject);
-            }
+            if (!other.CompareTag("Enemy") && !other.CompareTag("Obstacle")) 
+                return;
+
+            GameObject explosion = Instantiate(explosionEffect, transform.position, transform.rotation);
+            explosion.GetComponent<ExplosionEffect>().SetDamage(_damage);
+            Destroy(explosion, 2f);
+            Destroy(gameObject);
         }
     }
 }

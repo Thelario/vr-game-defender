@@ -1,10 +1,9 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Video;
 
 namespace Game
 {
-	public class Enemy : MonoBehaviour, IDamageable
+	public class Enemy : MonoBehaviour, IDamageable, IFreezable
 	{
 		[Header("Fields")]
 		[SerializeField] float velocidad = 2.0f;
@@ -17,6 +16,7 @@ namespace Game
 		[SerializeField] private MeshRenderer enemyMeshRenderer;
 		[SerializeField] private Material defaultMaterial;
 		[SerializeField] private Material hitMaterial;
+		[SerializeField] private Material freezeMaterial;
 		[SerializeField] private Transform skullTransform;
 
 		private Transform[] waypoints;
@@ -33,8 +33,6 @@ namespace Game
 		{
 			Vector3 relPos = siguientePosicion - transform.position;
 			transform.rotation = Quaternion.LookRotation(relPos, Vector3.up);
-			//Vector3 nextPosModified = new Vector3(siguientePosicion.x, transform.position.y, siguientePosicion.z);
-			//transform.up = (nextPosModified - transform.position).normalized;
 			
 			transform.position = Vector3.MoveTowards(
 				transform.position,
@@ -77,6 +75,18 @@ namespace Game
 			{
 				Destroy(gameObject);
 			}
+		}
+
+		public IEnumerator Co_Freeze(float freezeTime)
+		{
+			float velocidadAnterior = velocidad;
+			velocidad = 0;
+			enemyMeshRenderer.material = freezeMaterial;
+			
+			yield return new WaitForSeconds(freezeTime);
+
+			velocidad = velocidadAnterior;
+			enemyMeshRenderer.material = defaultMaterial;
 		}
 	}
 }

@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Game
 {
-    public class ExplosionDamage : MonoBehaviour
+    public class ExplosionEffect : MonoBehaviour
     {
         private float _damage;
 

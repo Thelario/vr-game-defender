@@ -12,6 +12,7 @@ namespace Game
         [SerializeField] private int maxEnemies = 20;
         [SerializeField] private Transform father;
         [SerializeField] private Button startRoundButton;
+        [SerializeField] private GameObject nextRoundBehindBlock;
         [SerializeField] private PlayerSpells ps;
 
         private Vector3 startRoundElementPosition;
@@ -24,6 +25,8 @@ namespace Game
         {
             round = 1;
             readyToSpawn = false;
+            startRoundButton.gameObject.SetActive(false);
+            nextRoundBehindBlock.SetActive(false);
         }
 
         private void Update()
@@ -42,7 +45,7 @@ namespace Game
 
         private IEnumerator spawnEnemys()
         {
-            numEnemies = Mathf.RoundToInt(5f * Mathf.Pow(1.35f, round));
+            numEnemies += round;
             for (int i = numEnemies; i != 0; i--)
             {
                 if (father.childCount < maxEnemies)
@@ -63,7 +66,8 @@ namespace Game
             }
 
             startRoundButton.gameObject.SetActive(true);
-            ps.RefillMana(200);
+            nextRoundBehindBlock.SetActive(true);
+            ps.RefillMana(1000);
 
             while (startRoundButton.isActiveAndEnabled)
             {

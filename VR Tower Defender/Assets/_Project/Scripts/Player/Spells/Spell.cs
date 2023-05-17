@@ -4,86 +4,69 @@ namespace Game
 {
 	public abstract class Spell : MonoBehaviour
 	{
-		// The initial mana cost of the spell
-		[SerializeField] protected int initialManaCost; 
-		
-		// The time that it takes a spell to cast after a previous cast
+		[SerializeField] protected int initialManaCost;
 		[SerializeField] protected float timeBetweenSpellCasts;
-
-		// Particles associated with this spell
 		[SerializeField] protected GameObject spellParticles;
 
-		// The current cost of the spell at the current moment of the game
-		protected int currentManaCost;
-		
-		// A counter variable to check for the time between spell casts
-		protected float timeBetweenSpellCastsCounter;
-
-		// A flag variable to determine whether the spell is active or not
-		protected bool isActive;
-        
-		// A flag variable to determine if the spell can be casted or not
-		protected bool canBeCasted;
+		private int _currentManaCost;
+		private float _timeBetweenSpellCastsCounter;
+		private bool _isActive;
+		private bool _canBeCasted;
 
 		protected virtual void Start()
 		{
-			timeBetweenSpellCastsCounter = timeBetweenSpellCasts;
-			currentManaCost = initialManaCost;
+			_timeBetweenSpellCastsCounter = 0f;
+			_currentManaCost = initialManaCost;
 		}
 
 		protected virtual void Update()
 		{
-			// If the current spell is not active, we do nothing
-			if (!isActive)
+			if (!_isActive)
 				return;
 
-			// If the current spell canBeCasted, then we do nothing
-			if (canBeCasted)
+			if (_canBeCasted)
 				return;
             
-			// If the current spell is active and cannot be casted,
-			// then we check for the time since the last cast
-			timeBetweenSpellCastsCounter -= Time.deltaTime;
-			if (!(timeBetweenSpellCastsCounter <= 0f))
+			_timeBetweenSpellCastsCounter -= Time.deltaTime;
+			if (!(_timeBetweenSpellCastsCounter <= 0f))
 				return;
             
-			// We set the spell to be able to be casted and restart the counter
-			canBeCasted = true;
-			timeBetweenSpellCastsCounter = timeBetweenSpellCasts;
+			_canBeCasted = true;
+			_timeBetweenSpellCastsCounter = timeBetweenSpellCasts;
+			spellParticles.SetActive(_canBeCasted);
 		}
 
 		public void EnableSpell(bool active)
 		{
-			isActive = active;
-			spellParticles.SetActive(active);
+			_isActive = active;
+			spellParticles.SetActive(_canBeCasted);
 		}
 
 		public int CastSpell(int currentPlayerMana)
 		{
-			// If the spell is not active, then do nothing
-			if (!isActive)
+			if (!_isActive)
 			{
 				print("Spell is not active");
 				return 0;
 			}
 
-			// If the spell cannot be casted, then do nothing
-			if (!canBeCasted)
+			if (!_canBeCasted)
 			{
 				print("Spell cannot be casted yet");
 				return 0;
 			}
 
-			// If the player doesn't have enough mana for the spell, then do nothing
-			if (currentPlayerMana < currentManaCost)
+			if (currentPlayerMana < _currentManaCost)
 			{
 				print("Not enough mana to cast spell");
 				return 0;
 			}
             
 			CreateSpellRay(currentPlayerMana);
+			_canBeCasted = false;
+			spellParticles.SetActive(_canBeCasted);
             
-			return currentManaCost;
+			return _currentManaCost;
 		}
 
 		protected abstract void CreateSpellRay(int currentPlayerMana);
