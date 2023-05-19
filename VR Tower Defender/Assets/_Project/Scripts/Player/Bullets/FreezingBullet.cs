@@ -30,7 +30,7 @@ namespace Game
 			if (!other.CompareTag("Enemy") && !other.CompareTag("Obstacle"))
 				return;
 			
-			GameObject effect = Instantiate(freezingEffect, transform.position, transform.rotation);
+			GameObject effect = Instantiate(freezingEffect, transform.position, Quaternion.identity);
 			effect.GetComponent<FreezingEffect>().ConfiguraFreezeTime(_freezingTime);
 			Destroy(effect, 2f);
 			Destroy(gameObject);
