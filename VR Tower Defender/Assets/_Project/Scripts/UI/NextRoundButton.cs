@@ -7,6 +7,9 @@ public class NextRoundButton : MonoBehaviour
     
     public void StartRound()
     {
+        if (Time.timeScale == 0f)
+            return;
+        
         Spawner.Instance.StartSpawning();
         gameObject.SetActive(false);
         brickBlockBehind.SetActive(false);

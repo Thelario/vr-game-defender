@@ -8,6 +8,9 @@ namespace Game
 		
 		public void PlayGame()
 		{
+			if (Time.timeScale == 0f)
+				return;
+			
 			Spawner.Instance.StartSpawning();
 			gameObject.SetActive(false);
 			brickBlockBehind.SetActive(false);

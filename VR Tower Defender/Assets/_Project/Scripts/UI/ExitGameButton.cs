@@ -6,6 +6,9 @@ namespace Game
 	{
 		public void ExitGame()
 		{
+			if (Time.timeScale == 0f)
+				return;
+			
 			Application.Quit();
 		}
 	}
