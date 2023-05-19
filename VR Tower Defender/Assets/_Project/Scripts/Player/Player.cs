@@ -3,8 +3,12 @@ using Valve.VR;
 
 namespace Game
 {
+	
 	public class Player : MonoBehaviour
 	{
+		[SerializeField] private AudioSource soundTrackAudioSource;
+		[SerializeField] private AudioClip menuClip;
+		[SerializeField] private AudioClip fightClip;
 		[SerializeField] private PlayerSpells playerSpells;
 		[SerializeField] private float interpolationPeriod = 1f;
 		
@@ -66,6 +70,22 @@ namespace Game
 		public void EnablePlayerShoot(bool enabled)
 		{
 			_canShoot = enabled;
+		}
+
+		public void ChangeSoundTrackToMenu()
+		{
+			soundTrackAudioSource.Stop();
+			soundTrackAudioSource.clip = menuClip;
+			soundTrackAudioSource.volume /= 2;
+			soundTrackAudioSource.Play();
+		}
+		
+		public void ChangeSoundTrackToFight()
+		{
+			soundTrackAudioSource.Stop();
+			soundTrackAudioSource.clip = fightClip;
+			soundTrackAudioSource.volume *= 2;
+			soundTrackAudioSource.Play();
 		}
 	}
 }

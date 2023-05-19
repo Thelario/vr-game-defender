@@ -46,6 +46,7 @@ namespace Game
 
         private IEnumerator spawnEnemys()
         {
+            player.ChangeSoundTrackToFight();
             numEnemies += round;
             for (int i = numEnemies; i != 0; i--)
             {
@@ -70,6 +71,7 @@ namespace Game
             nextRoundBehindBlock.SetActive(true);
             ps.RefillMana(1000);
             player.EnablePlayerShoot(false);
+            player.ChangeSoundTrackToMenu();
 
             while (startRoundButton.isActiveAndEnabled)
             {
