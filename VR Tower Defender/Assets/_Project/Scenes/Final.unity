@@ -4917,6 +4917,17 @@ Transform:
   m_Father: {fileID: 978570733}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &234697204 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7433235040980958505, guid: 3e911f5e78e88d241bf7617c80e7dac9, type: 3}
+  m_PrefabInstance: {fileID: 344067303}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d718d143450ba4bb4d35d9da827c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &235623834
 GameObject:
   m_ObjectHideFlags: 0
@@ -28999,6 +29010,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1095688920, guid: 946d978dade5fce4ba76ea3470e7c720, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 234697204}
+    - target: {fileID: 1095688920, guid: 946d978dade5fce4ba76ea3470e7c720, type: 3}
       propertyPath: brickBlockBehind
       value: 
       objectReference: {fileID: 1942604176}
@@ -29098,6 +29113,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7559230077357685942, guid: 946d978dade5fce4ba76ea3470e7c720, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 234697204}
     - target: {fileID: 7559230077357685942, guid: 946d978dade5fce4ba76ea3470e7c720, type: 3}
       propertyPath: brickBlockBehind
       value: 
@@ -39397,6 +39416,7 @@ MonoBehaviour:
   startRoundButton: {fileID: 1095688917}
   nextRoundBehindBlock: {fileID: 1942604176}
   ps: {fileID: 97259119}
+  player: {fileID: 234697204}
 --- !u!1 &1927739726
 GameObject:
   m_ObjectHideFlags: 0

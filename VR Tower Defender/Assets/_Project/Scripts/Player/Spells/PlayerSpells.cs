@@ -1,9 +1,10 @@
+using Game.Managers;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Game
 {
-	public class PlayerSpells : MonoBehaviour
+	public class PlayerSpells : Singleton<PlayerSpells>
 	{
 		[SerializeField] private int maxMana;
 		[SerializeField] private Spell[] spells;
@@ -33,8 +34,6 @@ namespace Game
 			currentSpell = (currentSpell + 1) % spells.Length;
 			
 			spells[currentSpell].EnableSpell(true);
-			
-			print("Changing spell");
 		}
 
 		public void RefillMana(int mana)

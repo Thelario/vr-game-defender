@@ -14,6 +14,7 @@ namespace Game
         [SerializeField] private Button startRoundButton;
         [SerializeField] private GameObject nextRoundBehindBlock;
         [SerializeField] private PlayerSpells ps;
+        [SerializeField] private Player player;
 
         private Vector3 startRoundElementPosition;
         private int round;
@@ -68,6 +69,7 @@ namespace Game
             startRoundButton.gameObject.SetActive(true);
             nextRoundBehindBlock.SetActive(true);
             ps.RefillMana(1000);
+            player.EnablePlayerShoot(false);
 
             while (startRoundButton.isActiveAndEnabled)
             {

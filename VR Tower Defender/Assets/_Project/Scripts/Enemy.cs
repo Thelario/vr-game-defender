@@ -6,11 +6,12 @@ namespace Game
 	public class Enemy : MonoBehaviour, IDamageable, IFreezable
 	{
 		[Header("Fields")]
-		[SerializeField] float velocidad = 2.0f;
-		[SerializeField] float distanciaCambio = 0.5f;
+		[SerializeField] private float velocidad = 2.0f;
+		[SerializeField] private float distanciaCambio = 0.5f;
 		[SerializeField] private float health;
 		[SerializeField] private float hitTime;
 		[SerializeField] private float damage;
+		[SerializeField] private int manaRefill;
 
 		[Header("References")]
 		[SerializeField] private MeshRenderer enemyMeshRenderer;
@@ -55,9 +56,12 @@ namespace Game
 			health -= damage;
 
 			StartCoroutine(nameof(Hit));
+
+			if (health > 0f)
+				return;
 			
-			if (health <= 0f)
-				Destroy(gameObject);
+			PlayerSpells.Instance.RefillMana(manaRefill);
+			Destroy(gameObject);
 		}
 
 		private IEnumerator Hit()
@@ -69,12 +73,13 @@ namespace Game
 			enemyMeshRenderer.material = defaultMaterial;
 		}
 		
-		private void OnTriggerEnter(Collider other) 
+		private void OnTriggerEnter(Collider other)
 		{
-			if (other.gameObject.CompareTag ("Door"))
-			{
-				Destroy(gameObject);
-			}
+			if (!other.gameObject.CompareTag("Door"))
+				return;
+			
+			other.GetComponent<Castle>().LoseHealth(damage);
+			Destroy(gameObject);
 		}
 
 		public IEnumerator Co_Freeze(float freezeTime)

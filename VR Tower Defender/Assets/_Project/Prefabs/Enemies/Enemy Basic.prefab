@@ -4931,6 +4931,7 @@ MonoBehaviour:
   health: 20
   hitTime: 0.1
   damage: 2
+  manaRefill: 5
   enemyMeshRenderer: {fileID: 2133008670870564571}
   defaultMaterial: {fileID: 2100000, guid: e7476007b3e902f4fbacf11098082904, type: 2}
   hitMaterial: {fileID: 2100000, guid: 0b3a2dec9b2f4734fa165572700823b4, type: 2}
