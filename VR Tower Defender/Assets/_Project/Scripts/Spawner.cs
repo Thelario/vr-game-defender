@@ -16,15 +16,16 @@ namespace Game
         [SerializeField] private PlayerSpells ps;
         [SerializeField] private Player player;
 
-        private Vector3 startRoundElementPosition;
         private int round;
 
-        private int enemysAlive;
         private bool readyToSpawn;
+        public bool finishGame;
+
 
         private void Start()
         {
             round = 1;
+            finishGame = false;
             readyToSpawn = false;
             startRoundButton.gameObject.SetActive(false);
             nextRoundBehindBlock.SetActive(false);
@@ -32,11 +33,16 @@ namespace Game
 
         private void Update()
         {
+            //Si ya está spawneando algo
             if (!readyToSpawn)
                 return;
             
-            readyToSpawn = false;
-            StartCoroutine(spawnEnemys());
+            //Si no ha acabado el juego
+            if (!finishGame)
+            {
+                readyToSpawn = false;
+                StartCoroutine(spawnEnemys());
+            }
         }
 
         public void StartSpawning()
@@ -50,16 +56,20 @@ namespace Game
             numEnemies += round;
             for (int i = numEnemies; i != 0; i--)
             {
-                if (father.childCount < maxEnemies)
+                if (!finishGame)
                 {
-                    Instantiate(enemyPrefabs[Random.Range(0, enemyPrefabs.Length)], transform.position, Quaternion.identity, father);
-                    yield return new WaitForSeconds(0.5f);
+                    if (father.childCount < maxEnemies)
+                    {
+                        Instantiate(enemyPrefabs[Random.Range(0, enemyPrefabs.Length)], transform.position, Quaternion.identity, father);
+                        yield return new WaitForSeconds(0.5f);
+                    }
+                    else
+                    {
+                        yield return new WaitForSeconds(spawnInterval);
+                        i++;
+                    }
                 }
-                else
-                {
-                    yield return new WaitForSeconds(spawnInterval);
-                    i++;
-                }
+
             }
             
             while (father.childCount > 0)
@@ -80,6 +90,22 @@ namespace Game
 
             readyToSpawn = true;
             round++;
+
+            print(round);
+        }
+
+        public void FinishSpawning()
+        {
+            finishGame = true;
+            numEnemies = 0;
+            for (int i = father.transform.childCount - 1; i >= 0; i--)
+            {
+             
+                GameObject.Destroy(transform.GetChild(i).gameObject);
+            }
+
+            readyToSpawn = false;
+            print(finishGame);
         }
     }
 }
