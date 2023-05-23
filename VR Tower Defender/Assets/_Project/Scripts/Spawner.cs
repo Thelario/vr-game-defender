@@ -91,13 +91,11 @@ namespace Game
             readyToSpawn = true;
             round++;
 
-            print(round);
         }
 
         public void FinishSpawning()
         {
             finishGame = true;
-            numEnemies = 0;
             for (int i = father.transform.childCount - 1; i >= 0; i--)
             {
              
@@ -105,7 +103,6 @@ namespace Game
             }
 
             readyToSpawn = false;
-            print(finishGame);
         }
     }
 }
