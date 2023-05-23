@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2559
     height: 1341
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 492}
   m_MaxSize: {x: 10000, y: 10000}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 136
+  controlID: 80
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 17
+  controlID: 159
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,8 +166,8 @@ MonoBehaviour:
     y: 0
     width: 411
     height: 1291
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -218,8 +218,8 @@ MonoBehaviour:
     y: 0
     width: 572
     height: 1291
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -270,8 +270,8 @@ MonoBehaviour:
     y: 662
     width: 1209
     height: 629
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -308,9 +308,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ce620000
-      m_LastClickedID: 25294
-      m_ExpandedIDs: 20f4ffff32fbfffff4600000966100000a620000b6620000286300003c6300001e640000b2640000ca650000e2680000
+      m_SelectedIDs: 481e0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 32fbffff1c630000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -416,22 +416,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Project/Scripts/UI
+    - Assets/_Project/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/_Project/Scripts/UI
+  - Assets/_Project/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Javi\Desktop\Uni\VR\vr-game-defender\VR Tower Defender
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 12720000
-    m_LastClickedID: 29202
-    m_ExpandedIDs: 000000009c7100009e710000a0710000b871000000ca9a3bffffff7f
+    m_SelectedIDs: ce710000
+    m_LastClickedID: 29134
+    m_ExpandedIDs: 00000000b0710000b2710000b4710000ce71000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -459,7 +459,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009c7100009e710000a0710000
+    m_ExpandedIDs: 00000000b0710000b2710000b4710000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -865,9 +865,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -12.232262, y: 16.247211, z: -4.0793443}
+    m_Target: {x: -28.534315, y: 9.356344, z: -8.142593}
     speed: 2
-    m_Value: {x: -12.232262, y: 16.247211, z: -4.0793443}
+    m_Value: {x: -28.534315, y: 9.356344, z: -8.142593}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -914,13 +914,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.044434186, y: 0.7532312, z: -0.05115441, w: -0.6542624}
+    m_Target: {x: -0.13357058, y: 0.7445478, z: -0.15660387, w: -0.6350553}
     speed: 2
-    m_Value: {x: -0.04435723, y: 0.7542088, z: -0.0512208, w: -0.6531293}
+    m_Value: {x: -0.13356975, y: 0.7445432, z: -0.1566029, w: -0.63505137}
   m_Size:
-    m_Target: 1.1305535
+    m_Target: 11.725314
     speed: 2
-    m_Value: 1.1305535
+    m_Value: 11.725314
   m_Ortho:
     m_Target: 0
     speed: 2

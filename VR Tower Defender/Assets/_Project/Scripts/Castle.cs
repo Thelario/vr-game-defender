@@ -10,6 +10,9 @@ namespace Game
         [SerializeField] private Button restartButton;
         [SerializeField] private Button youLostButton;
         [SerializeField] private GameObject endPanel;
+        [SerializeField] private GameObject particulas1;
+        [SerializeField] private GameObject particulas2;
+        [SerializeField] private GameObject barraFillArea;
     
         private float _currentHealth;
 
@@ -21,6 +24,8 @@ namespace Game
             restartButton.gameObject.SetActive(false);
             youLostButton.gameObject.SetActive(false);
             endPanel.SetActive(false);
+            particulas1.SetActive(false);
+            particulas2.SetActive(false);
         }
     
         public void LoseHealth(float damage)
@@ -32,6 +37,9 @@ namespace Game
                 restartButton.gameObject.SetActive(true);
                 youLostButton.gameObject.SetActive(true);
                 endPanel.SetActive(true);
+                particulas1 .SetActive(true);
+                particulas2 .SetActive(true);
+                barraFillArea.SetActive(false);
                 Spawner.Instance.FinishSpawning();
             }
         }
