@@ -22,7 +22,7 @@ namespace Game
         private void Start()
         {
 			_shoot = SteamVR_Input.GetBooleanAction("GrabPinch");
-			_pause = SteamVR_Input.GetBooleanAction("<<Insert Name Gere>>");
+			_pause = SteamVR_Input.GetBooleanAction("Crouch");
 
 			_gameIsPaused = false;
 			_canShoot = false;

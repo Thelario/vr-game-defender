@@ -34,6 +34,7 @@ namespace Game
             barraVida.value = _currentHealth;
             if (barraVida.value <= 0 )
             {
+                SfxManager.Instance.PlayClip(SfxType.Failure);
                 restartButton.gameObject.SetActive(true);
                 youLostButton.gameObject.SetActive(true);
                 endPanel.SetActive(true);

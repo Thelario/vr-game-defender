@@ -16,7 +16,7 @@ namespace Game
 			if (!other.CompareTag("Enemy"))
 				return;
 
-			StartCoroutine(other.GetComponent<IFreezable>().Co_Freeze(_freezeTime));
+			other.GetComponent<IFreezable>().Freeze(_freezeTime);
 		}
 	}
 }

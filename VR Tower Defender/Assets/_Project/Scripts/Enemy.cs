@@ -18,16 +18,17 @@ namespace Game
 		[SerializeField] private Material defaultMaterial;
 		[SerializeField] private Material hitMaterial;
 		[SerializeField] private Material freezeMaterial;
-		[SerializeField] private Transform skullTransform;
 
 		private Transform[] waypoints;
 		private Vector3 siguientePosicion;
 		private int numeroSiguientePosicion;
+		private float _currentSpeed;
 		
 		private void Start()
 		{
 			waypoints = PathManager.Instance.GetRandomPath();
 			siguientePosicion = waypoints[0].position;
+			_currentSpeed = velocidad;
 		}
 
 		private void Update()
@@ -38,7 +39,7 @@ namespace Game
 			transform.position = Vector3.MoveTowards(
 				transform.position,
 				siguientePosicion,
-				velocidad * Time.deltaTime);
+				_currentSpeed * Time.deltaTime);
 
 			if (Vector3.Distance(transform.position, siguientePosicion) < distanciaCambio)
 			{
@@ -61,12 +62,14 @@ namespace Game
 				return;
 			
 			PlayerSpells.Instance.RefillMana(manaRefill);
+			SfxManager.Instance.PlayClip(SfxType.EnemyDeath);
 			Destroy(gameObject);
 		}
 
 		private IEnumerator Hit()
 		{
 			enemyMeshRenderer.material = hitMaterial;
+			SfxManager.Instance.PlayClip(SfxType.EnemyHit);
 
 			yield return new WaitForSeconds(hitTime);
 			
@@ -82,15 +85,19 @@ namespace Game
 			Destroy(gameObject);
 		}
 
-		public IEnumerator Co_Freeze(float freezeTime)
+		public void Freeze(float freezeTime)
 		{
-			float velocidadAnterior = velocidad;
-			velocidad = 0;
+			StartCoroutine(Co_Freeze(freezeTime));
+		}
+
+		private IEnumerator Co_Freeze(float freezeTime)
+		{
+			_currentSpeed = 0;
 			enemyMeshRenderer.material = freezeMaterial;
-			
+			print(freezeTime);
 			yield return new WaitForSeconds(freezeTime);
 
-			velocidad = velocidadAnterior;
+			_currentSpeed = velocidad;
 			enemyMeshRenderer.material = defaultMaterial;
 		}
 	}

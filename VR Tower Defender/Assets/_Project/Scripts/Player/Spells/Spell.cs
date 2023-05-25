@@ -65,6 +65,7 @@ namespace Game
 			CreateSpellRay(currentPlayerMana);
 			_canBeCasted = false;
 			spellParticles.SetActive(_canBeCasted);
+			SfxManager.Instance.PlayClip(SfxType.Spell);
             
 			return _currentManaCost;
 		}

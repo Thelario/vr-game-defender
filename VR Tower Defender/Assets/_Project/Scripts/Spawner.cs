@@ -21,7 +21,6 @@ namespace Game
         private bool readyToSpawn;
         public bool finishGame;
 
-
         private void Start()
         {
             round = 1;
@@ -33,7 +32,7 @@ namespace Game
 
         private void Update()
         {
-            //Si ya está spawneando algo
+            //Si ya estï¿½ spawneando algo
             if (!readyToSpawn)
                 return;
             
@@ -69,7 +68,6 @@ namespace Game
                         i++;
                     }
                 }
-
             }
             
             while (father.childCount > 0)
@@ -90,16 +88,15 @@ namespace Game
 
             readyToSpawn = true;
             round++;
-
         }
 
         public void FinishSpawning()
         {
             finishGame = true;
+            
             for (int i = father.transform.childCount - 1; i >= 0; i--)
             {
-             
-                GameObject.Destroy(transform.GetChild(i).gameObject);
+                Destroy(transform.GetChild(i).gameObject);
             }
 
             readyToSpawn = false;

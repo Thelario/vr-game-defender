@@ -6,6 +6,11 @@ namespace Game
     {
         private float _damage;
 
+        private void Start()
+        {
+            SfxManager.Instance.PlayClip(SfxType.Explosion);
+        }
+
         public void SetDamage(float damage)
         {
             _damage = damage;
