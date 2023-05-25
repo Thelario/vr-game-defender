@@ -12,6 +12,8 @@ namespace Game
 		[SerializeField] private float hitTime;
 		[SerializeField] private float damage;
 		[SerializeField] private int manaRefill;
+		[SerializeField] private int minMoneyOnDeath;
+		[SerializeField] private int maxMoneyOnDeath;
 
 		[Header("References")]
 		[SerializeField] private MeshRenderer enemyMeshRenderer;
@@ -63,6 +65,7 @@ namespace Game
 			
 			PlayerSpells.Instance.RefillMana(manaRefill);
 			SfxManager.Instance.PlayClip(SfxType.EnemyDeath);
+			Shop.Instance.AddMoney(Random.Range(minMoneyOnDeath, maxMoneyOnDeath));
 			Destroy(gameObject);
 		}
 

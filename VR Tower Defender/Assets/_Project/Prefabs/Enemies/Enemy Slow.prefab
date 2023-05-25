@@ -4930,13 +4930,14 @@ MonoBehaviour:
   distanciaCambio: 0.25
   health: 50
   hitTime: 0.1
-  damage: 3
+  damage: 10
   manaRefill: 10
+  minMoneyOnDeath: 4
+  maxMoneyOnDeath: 7
   enemyMeshRenderer: {fileID: 2133008670870564571}
   defaultMaterial: {fileID: 2100000, guid: e7476007b3e902f4fbacf11098082904, type: 2}
   hitMaterial: {fileID: 2100000, guid: 0b3a2dec9b2f4734fa165572700823b4, type: 2}
   freezeMaterial: {fileID: 2100000, guid: 899a2dc0d03056448a204c3916dec4e3, type: 2}
-  skullTransform: {fileID: 2151317487504920239}
 --- !u!54 &758950119227345598
 Rigidbody:
   m_ObjectHideFlags: 0

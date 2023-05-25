@@ -4,6 +4,7 @@ namespace Game
 {
 	public abstract class Spell : MonoBehaviour
 	{
+		[SerializeField] protected bool purchased;
 		[SerializeField] protected int initialManaCost;
 		[SerializeField] protected float timeBetweenSpellCasts;
 		[SerializeField] protected GameObject spellParticles;
@@ -12,6 +13,7 @@ namespace Game
 		private float _timeBetweenSpellCastsCounter;
 		private bool _isActive;
 		private bool _canBeCasted;
+		private bool _purchased;
 
 		protected virtual void Start()
 		{
@@ -69,6 +71,8 @@ namespace Game
             
 			return _currentManaCost;
 		}
+
+		public abstract void UpgradeSpell();
 
 		protected abstract void CreateSpellRay(int currentPlayerMana);
 	}

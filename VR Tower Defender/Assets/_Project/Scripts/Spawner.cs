@@ -51,6 +51,7 @@ namespace Game
 
         private IEnumerator spawnEnemys()
         {
+            Shop.Instance.DisableItems();
             player.ChangeSoundTrackToFight();
             numEnemies += round;
             for (int i = numEnemies; i != 0; i--)
@@ -75,6 +76,7 @@ namespace Game
                 yield return new WaitForSeconds(1);
             }
 
+            Shop.Instance.EnableItems();
             startRoundButton.gameObject.SetActive(true);
             nextRoundBehindBlock.SetActive(true);
             ps.RefillMana(1000);

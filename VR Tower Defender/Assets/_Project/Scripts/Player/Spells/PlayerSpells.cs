@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Game.Managers;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,7 +8,7 @@ namespace Game
 	public class PlayerSpells : Singleton<PlayerSpells>
 	{
 		[SerializeField] private int maxMana;
-		[SerializeField] private Spell[] spells;
+		[SerializeField] private List<Spell> spells;
 		[SerializeField] private int currentSpell;
 		[SerializeField] private int currentPlayerMana;
 		[SerializeField] private Slider manaSlider;
@@ -21,6 +22,11 @@ namespace Game
 			manaSlider.value = currentPlayerMana;
 		}
 
+		public void AddSpell(Spell spell)
+		{
+			spells.Add(spell);
+		}
+
 		public void CastSpell()
 		{
 			currentPlayerMana -= spells[currentSpell].CastSpell(currentPlayerMana);
@@ -31,7 +37,7 @@ namespace Game
 		{
 			spells[currentSpell].EnableSpell(false);
 			
-			currentSpell = (currentSpell + 1) % spells.Length;
+			currentSpell = (currentSpell + 1) % spells.Count;
 			
 			spells[currentSpell].EnableSpell(true);
 		}
