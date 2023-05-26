@@ -13443,6 +13443,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 234697206, guid: 3e911f5e78e88d241bf7617c80e7dac9, type: 3}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 344067305, guid: 3e911f5e78e88d241bf7617c80e7dac9, type: 3}
       propertyPath: shootPoint
       value: 
