@@ -41,7 +41,7 @@ namespace Game
 		public void EnableSpell(bool active)
 		{
 			_isActive = active;
-			spellParticles.SetActive(_canBeCasted);
+			spellParticles.SetActive(active);
 		}
 
 		public int CastSpell(int currentPlayerMana)

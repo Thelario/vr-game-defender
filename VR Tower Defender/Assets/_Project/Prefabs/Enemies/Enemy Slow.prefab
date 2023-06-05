@@ -4928,7 +4928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 3
   distanciaCambio: 0.25
-  health: 50
+  health: 35
   hitTime: 0.1
   damage: 10
   manaRefill: 10

@@ -20,12 +20,14 @@ namespace Game
 
         private bool readyToSpawn;
         public bool finishGame;
+        private bool finishRound;
 
         private void Start()
         {
             round = 1;
             finishGame = false;
             readyToSpawn = false;
+            finishRound = false;
             startRoundButton.gameObject.SetActive(false);
             nextRoundBehindBlock.SetActive(false);
         }
@@ -37,9 +39,10 @@ namespace Game
                 return;
             
             //Si no ha acabado el juego
-            if (!finishGame)
+            if (!finishRound)
             {
                 readyToSpawn = false;
+                finishRound = true;
                 StartCoroutine(spawnEnemys());
             }
         }
@@ -54,6 +57,7 @@ namespace Game
             Shop.Instance.DisableItems();
             player.ChangeSoundTrackToFight();
             numEnemies += round;
+            print(numEnemies);
             for (int i = numEnemies; i != 0; i--)
             {
                 if (!finishGame)
@@ -89,6 +93,7 @@ namespace Game
             }
 
             readyToSpawn = true;
+            finishRound = false;
             round++;
         }
 

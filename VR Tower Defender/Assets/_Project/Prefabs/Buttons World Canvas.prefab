@@ -2862,6 +2862,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dontDestroyOnLoad: 0
   moneyText: {fileID: 945663060}
+  disableShopItems:
+  - {fileID: 1983322329}
+  - {fileID: 2115897594}
+  - {fileID: 15179914}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1259219577
 GameObject:
   m_ObjectHideFlags: 0

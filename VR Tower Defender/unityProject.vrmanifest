@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.vrtowerdefender.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\usuario\\Desktop\\VR Game Defender\\vr-game-defender\\VR Tower Defender\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "VR Tower Defender [Testing]"
+        }
+      }
+    }
+  ]
+}
